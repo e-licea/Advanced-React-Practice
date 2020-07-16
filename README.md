@@ -1,4 +1,4 @@
-# Sprint Challenge: Advanced React - Men's Football/Soccer Rankings
+# Sprint Practice: Advanced React - Men's Football/Soccer Rankings
 
 
 ## Self-Study/Essay Questions
