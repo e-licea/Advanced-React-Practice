@@ -1,33 +1,93 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eddea4;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background-image:
+  radial-gradient(circle at 100% 150%, #eddea4 24%, #f7a072 25%, #f7a072 28%, #eddea4 29%, #eddea4 36%, #f7a072 36%, #f7a072 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #eddea4 24%, #f7a072 25%, #f7a072 28%, #eddea4 29%, #eddea4 36%, #f7a072 36%, #f7a072 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #f7a072 10%, #eddea4 11%, #eddea4 23%, #f7a072 24%, #f7a072 30%, #eddea4 31%, #eddea4 43%, #f7a072 44%, #f7a072 50%, #eddea4 51%, #eddea4 63%, #f7a072 64%, #f7a072 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #f7a072 5%, #eddea4 6%, #eddea4 15%, #f7a072 16%, #f7a072 20%, #eddea4 21%, #eddea4 30%, #f7a072 31%, #f7a072 35%, #eddea4 36%, #eddea4 45%, #f7a072 46%, #f7a072 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #f7a072 5%, #eddea4 6%, #eddea4 15%, #f7a072 16%, #f7a072 20%, #eddea4 21%, #eddea4 30%, #f7a072 31%, #f7a072 35%, #eddea4 36%, #eddea4 45%, #f7a072 46%, #f7a072 49%, transparent 50%, transparent);
+  background-size:100px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.dark-mode {
+  background-image:
+  radial-gradient(circle at 100% 150%, #53dd6c 24%, #23ce6b 25%, #23ce6b 28%, #53dd6c 29%, #53dd6c 36%, #23ce6b 36%, #23ce6b 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #53dd6c 24%, #23ce6b 25%, #23ce6b 28%, #53dd6c 29%, #53dd6c 36%, #23ce6b 36%, #23ce6b 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #23ce6b 10%, #53dd6c 11%, #53dd6c 23%, #23ce6b 24%, #23ce6b 30%, #53dd6c 31%, #53dd6c 43%, #23ce6b 44%, #23ce6b 50%, #53dd6c 51%, #53dd6c 63%, #23ce6b 64%, #23ce6b 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #23ce6b 5%, #53dd6c 6%, #53dd6c 15%, #23ce6b 16%, #23ce6b 20%, #53dd6c 21%, #53dd6c 30%, #23ce6b 31%, #23ce6b 35%, #53dd6c 36%, #53dd6c 45%, #23ce6b 46%, #23ce6b 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #23ce6b 5%, #53dd6c 6%, #53dd6c 15%, #23ce6b 16%, #23ce6b 20%, #53dd6c 21%, #53dd6c 30%, #23ce6b 31%, #23ce6b 35%, #53dd6c 36%, #53dd6c 45%, #23ce6b 46%, #23ce6b 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  font-family: 'Pacifico';
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.nav-title {
+  padding-left: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+button {
+  height: 4rem;
+  margin-right: 2rem;
+  display: flex;
+  border: 4px solid black;
+  border-radius: 10px;
+  font-family: 'Pacifico';
+  font-size: 2rem;
+  background-color: #eddea4;
+  box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  width: 14rem;
+  height: 16rem;
+  padding: 2.5%;
+  border: 5px solid black;
+  border-radius: 1rem;
+  margin: 2rem;
+  background-color: #eddea4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+
+.card-name {
+  font-family: 'Pacifico';
+  font-size: 1.8rem;
+}
+
+.card-rank {
+  font-family: 'lato';
+  font-weight: bold;
+  font-size: 0.8rem;
+  transform: scaleX(200deg);
+}
+
+.card-team {
+  font-family: 'lato';
+  font-size: 1.3rem;
 }
